@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">AllConvert</string>
+
+    <!-- String arrays for the unit converter spinners -->
+    <!-- To add a new unit to any of the arrays, you MUST edit the converter class to allow that
+        unit to be converted. Otherwise, the converter will not work. These only determine which units
+        appear in the spinners. -->
+    <string-array name="length_units">
+        <item id="l_inches">Inches</item>
+        <item>Feet</item>
+        <item>Yards</item>
+        <item>Miles</item>
+        <item>Millimeters</item>
+        <item>Centimeters</item>
+        <item>Meters</item>
+        <item>Kilometers</item>
+    </string-array>
+    <string-array name="area_units">
+        <item>Square Inches</item>
+        <item>Square Feet</item>
+        <item>Square Yards</item>
+        <item>Square Miles</item>
+        <item>Square Meters</item>
+        <item>Square Kilometers</item>
+        <item>Acres</item>
+    </string-array>
+
+    <string-array name="weight_units">
+        <item>Pounds</item>
+        <item>Kilograms</item>
+        <item>Grams</item>
+        <item>Milligrams</item>
+    </string-array>
+
+
+    <string-array name="temp_units">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+    <string-array name="volume_units">
+        <item>Milliliter</item>
+        <item>Liter</item>
+        <item>Kiloliter</item>
+        <item>Pint</item>
+        <item>Quart</item>
+        <item>Gallon</item>
+        <item>Cup</item>
+    </string-array>
+
+</resources>

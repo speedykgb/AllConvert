@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="sg.com.kaplan.allconvert.Area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF"
+        android:background="#FFEB3B">
+
+
+        <TextView
+            android:id="@+id/area_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="FROM:"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:layout_below="@+id/area_submit"
+            android:layout_alignStart="@+id/area_unit_spinner1" />
+
+        <EditText
+            android:id="@+id/area_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="ENTER A NUMBER"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/area_unit_spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/area_instructions"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="44dp"
+            android:gravity="left"
+            android:background="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/area_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/area_instructions"
+            android:layout_alignBottom="@+id/area_instructions"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            android:text="TO:"
+            android:layout_toEndOf="@+id/area_submit"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/area_textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/area_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/area_unit_spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/area_unit_spinner1"
+            android:layout_toEndOf="@+id/area_submit"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical|center" />
+
+        <Button
+            android:id="@+id/area_submit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="convertArea"
+            android:text="CONVERT"
+            android:textColor="#FFFFFF"
+            android:background="#000000"
+            android:layout_below="@+id/area_textView3"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            app:srcCompat="@drawable/education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="44dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/area_unit_spinner1" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
